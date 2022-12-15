@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { sendMessage } from "../../network";
 import "./ContactUs.css";
 
 function ContactUs({ active }) {
@@ -40,6 +39,7 @@ try {
 			status: 200,
 			message: "Message was sent Successfully.",
 		});		console.log(res.data.data);
+		resetFields();
 } catch (error) {
 				setResponse({
 						status: 400,

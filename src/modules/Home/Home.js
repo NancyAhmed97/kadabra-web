@@ -17,18 +17,18 @@ function Home() {
 	const client = useRef();
 	const contact = useRef();
 console.log(about);
-	const [thePosition, setPosition] = useState(window.pageYOffset);
+	// const [thePosition, setPosition] = useState(window.pageYOffset);
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(null);
 		}, 10);
 	}, [active]);
 
-	let listenToScroll = () => {
-		const winScroll =
-			document.body.scrollTop || document.documentElement.scrollTop;
-		setPosition(winScroll);
-	};
+	// let listenToScroll = () => {
+	// 	const winScroll =
+	// 		document.body.scrollTop || document.documentElement.scrollTop;
+	// 	setPosition(winScroll);
+	// };
 	useEffect(() => {
 		// window.addEventListener("scroll", listenToScroll);
 		// if (
@@ -63,7 +63,7 @@ console.log(about);
 		// 	localStorage.setItem("active", "contact");
 		// } else {
 		// }
-	}, [thePosition]);
+	}, []);
 
 	return (
 		<div>

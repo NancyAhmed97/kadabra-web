@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { DigitalServices } from "../../network";
 import "./Services.css";
 import { mediaBaseUrl } from "../../../../services";
 import axios from "axios";

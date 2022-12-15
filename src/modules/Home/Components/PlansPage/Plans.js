@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { GetPackages } from "../../network";
 import { mediaBaseUrl } from "../../../../services";
 import TickBox from "../../../../Assets/Icons/tickBox";
 import Coins from "../../../../Assets/Icons/coins.svg";

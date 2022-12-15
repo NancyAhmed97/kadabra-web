@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { GetDigitalServices } from "../../network";
 import { mediaBaseUrl } from "../../../../services";
 import Slider from "react-slick";
 import "./Client.css";
