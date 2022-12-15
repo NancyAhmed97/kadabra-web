@@ -1,0 +1,15 @@
+<svg id="brochure" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.547" height="113.177" viewBox="0 0 86.547 113.177">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.302" y1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#896218"/>
+      <stop offset="1" stop-color="#f6ce7b"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_915" data-name="Path 915" d="M119.917,19.972V0H60V93.2H83.3v19.972h63.246v-93.2Zm-22.293,0L113.26,9.548V19.972ZM66.657,86.547V6.657h38.937L83.3,21.52v5.11H73.315v6.657H83.3v6.657H73.315V46.6H83.3V53.26H73.315v6.657H83.3v6.657H73.315v6.657H83.3V86.547ZM139.89,106.52H89.959V26.63H139.89Z" transform="translate(-60)" fill="url(#linear-gradient)"/>
+  <path id="Path_916" data-name="Path 916" d="M319.972,150H300v19.972h19.973Zm-6.658,13.315h-6.657v-6.658h6.657Z" transform="translate(-246.74 -116.713)" fill="url(#linear-gradient)"/>
+  <path id="Path_917" data-name="Path 917" d="M225,210h9.986v6.657H225Z" transform="translate(-188.384 -163.398)" fill="url(#linear-gradient)"/>
+  <path id="Path_918" data-name="Path 918" d="M225,150h9.986v6.657H225Z" transform="translate(-188.384 -116.713)" fill="url(#linear-gradient)"/>
+  <path id="Path_919" data-name="Path 919" d="M225,270h36.616v6.658H225Z" transform="translate(-188.384 -210.083)" fill="url(#linear-gradient)"/>
+  <path id="Path_920" data-name="Path 920" d="M225,330h36.616v6.658H225Z" transform="translate(-188.384 -256.768)" fill="url(#linear-gradient)"/>
+  <path id="Path_921" data-name="Path 921" d="M225,390h36.616v6.657H225Z" transform="translate(-188.384 -303.453)" fill="url(#linear-gradient)"/>
+</svg>

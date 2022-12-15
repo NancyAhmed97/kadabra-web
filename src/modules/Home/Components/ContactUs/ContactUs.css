@@ -1,0 +1,85 @@
+.contactUs {
+	padding: 63px 0px;
+	background-color: rgba(239, 196, 111, 15%);
+}
+.contactUs h3 {
+	position: relative;
+	z-index: 55555;
+}
+.contactUs .borderLine {
+	width: 115px;
+	height: 20px;
+	background-color: #f2d7a1;
+	position: relative;
+	bottom: 14px;
+	margin-bottom: 25px;
+	transition: all 0.4s ease-in-out;
+}
+
+.contactUs .borderLine:hover {
+	width: 135px;
+	background-color: #cda656;
+}
+.contactUs form {
+	border-radius: 10px;
+	padding: 50px 18%;
+}
+.contactUs .formContainer {
+	background: #fff;
+}
+
+.contactUs .form-control-box {
+	margin: 16px auto;
+}
+
+.contactUs .form-control {
+	padding: 12px 5px;
+	border: none;
+	background: #f5f5f5;
+	width: 100%;
+}
+.contactUs .form-control {
+	padding: 12px 5px;
+	border: none;
+	background: #f5f5f5;
+	width: 100%;
+}
+.contactUs .alert {
+	padding: 12px 5px;
+
+	background: #f5f5f5;
+	width: 100%;
+	border: 1px solid red;
+}
+.contactUs textarea {
+	resize: none;
+}
+.contactUs label {
+	color: grey;
+	margin-bottom: 8px;
+}
+.contactUs .btnContainer {
+	margin: 10px auto;
+	text-align: center;
+}
+.contactUs .btn,
+.contactUs .btn:hover,
+.contactUs .btn:focus {
+	background-color: #946c20;
+	width: 50%;
+	border-radius: 6px;
+	color: #fff;
+	box-shadow: none;
+}
+
+.contactUs .messageBox {
+	padding: 10px;
+	text-align: center;
+}
+.contactUs .successMessage {
+	background-color: #70f6bc;
+}
+.contactUs .failMessage {
+	background-color: #ff0000;
+	color: #fff;
+}

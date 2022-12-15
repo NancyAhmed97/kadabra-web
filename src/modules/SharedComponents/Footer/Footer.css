@@ -1,0 +1,112 @@
+.footer {
+  background-color: #010101;
+  bottom: -20px;
+  position: relative;
+}
+.footer h5 {
+  color: #ffff;
+}
+.footer p {
+  color: #ffff;
+}
+.footer .container {
+  padding: 30px 0px 40px 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+
+
+.Packages h5 {
+  margin-bottom: 20px;
+}
+.SiteMap p {
+  margin-bottom: 20px;
+  margin-bottom: 7px;
+}
+.SocialMedia .InstgramImg {
+  margin-right: 20px;
+}
+.SocialMedia  h5
+{
+  margin-bottom: 20px;
+}
+.SiteMap p {
+cursor: pointer;
+}
+.Packages a
+{
+    display: block;
+    color: #ffff;
+}
+.Packages a:hover
+{
+    display: block;
+    color: #ffff;
+}
+.SiteMap a
+{
+    display: block;
+    color: #ffff;
+}
+.SiteMap a:hover
+{
+    display: block;
+    color: #ffff;
+}
+.copyRightBar
+{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+.Downloads h5
+{
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer .col-sm {
+    padding-right: 0;
+    width: 100%;
+  }
+  .Downloads h5 {
+    text-align: center;
+  }
+
+  .Packages h5 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .Packages p {
+    text-align: center;
+  }
+ 
+  .Downloads div {
+    text-align: center;
+  }
+ 
+  .SocialMedia h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  
+  }
+  .SocialMedia span {
+    margin: auto;
+  }
+  .SocialMedia .social {
+    text-align: center;
+  }
+  
+  .SiteMap a
+  {
+      text-align: center;
+  }
+  .SiteMap h5
+  {
+    text-align: center;
+  }
+  .SiteMap p {
+    text-align: center;
+  }
+}

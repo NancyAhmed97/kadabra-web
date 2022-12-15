@@ -1,0 +1,100 @@
+.Services {
+	background-color: rgba(239, 196, 111, 15%);
+}
+
+
+.Services h3 {
+	position: relative;
+	z-index: 55555;
+	padding-bottom: 52px;
+}
+.Services .borderLine {
+	width: 113px;
+	height: 20px;
+	background-color: #f2d7a1;
+	position: relative;
+	bottom: 77px;
+	margin-bottom: 25px;
+	transition: all 0.4s ease-in-out;
+}
+
+.Services .borderLine:hover {
+	width: 135px;
+	background-color: #cda656;
+}
+.Services .borderLine:hover {
+	width: 135px !important;
+	background-color: #cda656 !important;
+}
+.Services .cart {
+	padding: 35px 0px;
+	background-color: #ffffff;
+	box-shadow: 0 3 6 rgba(0, 0, 0, 0.16);
+	margin-bottom: 35px;
+	position: relative;
+	width: 95%;
+}
+.Services .cart:hover {
+	background-color: black !important;
+}
+.Services .cart .list-unstyled {
+	height: 190px;
+}
+/* .Services .cart  ul li span{
+
+ color: gainsboro !important;
+} */
+
+.Services .cart:hover .btn-container .btn {
+	background-color: #ffff !important;
+	color: #946c20 !important;
+}
+
+.Services .cart:hover li span {
+	color: #ffff !important;
+}
+.Services .cart .titleBox {
+	text-align: center;
+	height: 55px;
+}
+.Services .cart .titleBox .title {
+	color: #cda656;
+	font-size: 22px;
+}
+.Services .cart .titleBox .price {
+	color: #cda656;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.Services .infoBox {
+	color: #ffffff !important;
+	margin: 20px;
+}
+.Services .infoBox .btn-container {
+	text-align: center;
+}
+.Services .btn-container .btn {
+	text-align: center !important;
+	color: #ffffff !important;
+	border-radius: 6px !important;
+	background-color: #946c20 !important;
+	font-weight: bold !important;
+	border: none;
+	padding: 5px 20px;
+}
+.Services .AppIcon {
+	text-align: center;
+	height: 115px;
+}
+
+@media (min-width:768px){
+	.Services {
+		padding: 64px;
+		}
+}
+@media (max-width:768px){
+	.Services h3 {
+		padding-top: 25px;
+		margin-top: 25px;
+	}
+}

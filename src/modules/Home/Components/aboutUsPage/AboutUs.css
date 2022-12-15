@@ -1,0 +1,118 @@
+.aboutUs h3 {
+	position: relative;
+	z-index: 55555;
+}
+.aboutUs .iconBox {
+	width: 400px !important;
+	background: #fff !important;
+	height: 280px !important;
+	border-radius: 10px !important;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+}
+.aboutUs .modaal {
+	margin-bottom: 100px !important;
+}
+.aboutUs .iconBox:hover {
+	background: black !important;
+}
+.aboutUs .iconBox img {
+	position: relative;
+	top: 20%;
+	left: 25%;
+}
+.aboutUs .borderLine {
+	width: 113px;
+	height: 20px;
+	background-color: #f2d7a1;
+	position: relative;
+	bottom: 12px;
+	margin-bottom: 25px;
+	transition: all 0.4s ease-in-out;
+}
+
+.aboutUs .borderLine:hover {
+	width: 135px;
+	background-color: #cda656;
+}
+
+.aboutUs .roseBox {
+	background: rgba(239, 196, 111, 15%);
+	padding: 10px 5%;
+}
+.aboutUs .s2 {
+	font-weight: 400 !important;
+}
+.group {
+	text-align: right;
+	height: 480px;
+}
+.groupImg {
+	width: 350px;
+	transition: width 0.4s;
+}
+.groupImg:hover {
+	width: 400px;
+}
+
+.mission {
+	background-color: rgba(239, 196, 111, 15%);
+	padding: 50px 0px;
+}
+.textMission {
+	margin: 50px 80px;
+	width: 90%;
+}
+.textMission h3 {
+	color: #8b6419;
+	margin: 35px 0px;
+}
+.vision {
+	padding: 50px 0px;
+}
+
+.textVission h3 {
+	color: #8b6419;
+	margin: 35px 0px;
+}
+
+.textVission {
+	margin: 50px 80px;
+	width: 40%;
+}
+
+.Values {
+	background-color: rgba(239, 196, 111, 15%);
+
+	padding: 50px 0px;
+}
+.textValues h3 {
+	color: #8b6419;
+	margin: 35px 0px;
+}
+.textValues {
+	margin: 50px 80px;
+	width: 40%;
+}
+@media (max-width: 768px) {
+	.row {
+		margin: 0px !important;
+	}
+	.VissionImg {
+		width: 100%;
+	}
+	.valuedImg {
+		width: 100%;
+	}
+	.missionImg {
+		width: 100%;
+	}
+	.aboutUs .iconBox img {
+		width: 200px !important;
+	}
+	.aboutUs .iconBox img {
+		width: 175px !important;
+	}
+	.aboutUs .iconBox {
+		width: 370px !important;
+	}
+}

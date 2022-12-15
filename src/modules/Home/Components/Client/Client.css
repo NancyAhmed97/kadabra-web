@@ -1,0 +1,85 @@
+.Client {
+	padding: 60px 0px;
+	height: 450px;
+}
+.Client h3 {
+	position: relative;
+	z-index: 55555;
+}
+.slick-prev:before {
+	content: " <";
+	color: #efc46f;
+	font-size: 35px;
+	font-weight: bolder;
+}
+.slick-next:before {
+	content: ">";
+	color: #efc46f;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.Client img {
+	width: 240px;
+	aspect-ratio: 0.5 / 1;
+	height: 250px;
+	margin: auto;
+}
+@media (max-width: 768px) {
+	.Client img {
+		width: 89px;
+		height: 143px;
+	}
+	.Client .clientImg {
+		margin-left: 6px !important;
+	}
+	.slick-slider {
+		width: 92% !important;
+	}
+	.slick-next {
+		right: -10px !important;
+	}
+	.slick-prev {
+		left: -15px !important;
+	}
+}
+.Client .clientImg {
+	width: 60%;
+	background-color: #ffff;
+	border-radius: 15px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+	margin-left: 70px;
+}
+
+/* .imgContainer {
+  width: % !important;
+} */
+.Client .slick-next {
+	font-size: 25px !important;
+}
+.carousel-indicators {
+	display: none !important;
+}
+/* .Client [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+display: none !important;	
+} */
+.Client .borderLine {
+	width: 120px;
+	height: 20px;
+	background-color: #f2d7a1;
+	position: relative;
+	bottom: 12px;
+	margin-bottom: 50px;
+	transition: all 0.4s ease-in-out;
+}
+
+.Client .borderLine:hover {
+	width: 135px;
+	background-color: #cda656;
+}
+.Client .imgContainer {
+	display: inline-block;
+}
+.Client .slick-arrow::before {
+	display: none !important;
+}

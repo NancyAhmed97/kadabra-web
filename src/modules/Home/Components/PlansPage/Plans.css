@@ -1,0 +1,133 @@
+.Plans .cart:hover {
+	background-color: #ffff;
+}
+
+.Plans .cart:hover span {
+	color: #946c20;
+}
+
+.Plans .cart:hover svg {
+	color: #946c20 !important;
+}
+.Plans .cart:hover span {
+	color: #946c20;
+}
+.Plans .cart:hover .btn {
+	background-color: #cda656 !important;
+	color: #946c20 !important;
+}
+
+svg:hover {
+	fill: #946c20 !important;
+}
+
+.Plans h3 {
+	position: relative;
+	z-index: 55555;
+	margin-top: 25px;
+}
+.Plans .borderLine {
+	width: 113px;
+	height: 20px;
+	background-color: #f2d7a1;
+	position: relative;
+	bottom: 12px;
+	margin-bottom: 25px;
+}
+.Plans .cart {
+	padding: 20px 0px;
+	background-color: #010101;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 6px;
+	margin-bottom: 10px;
+	position: relative;
+	width: 100%;
+	min-height: 650px;
+}
+
+.Plans .flagContainer {
+	position: relative;
+}
+.Plans .list-unstyled {
+	min-height: 235px;
+}
+
+.Plans .flagItem {
+	position: absolute;
+	right: 0;
+}
+.Plans .cart .flagBox {
+	background-color: #e90000;
+	color: #fff;
+	width: 170px;
+	padding: 10px 2px;
+	position: relative;
+}
+.Plans .tickBoxContainer {
+	margin-right: 5px;
+}
+.Plans .cart .flagBox::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -23px;
+	top: 0;
+	border-top: 23px solid transparent;
+	border-bottom: 23px solid transparent;
+	border-right: 23px solid #e90000;
+}
+
+.Plans .cart .titleBox {
+	text-align: center;
+}
+.Plans .cart .titleBox.ml-60 {
+	margin-top: 60px;
+}
+
+.Plans .cart .titleBox .title {
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+}
+.Plans .cart .titleBox .price {
+	color: #cda656;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.Plans .infoBox {
+	color: #ffffff !important;
+	margin: 20px;
+}
+.Plans .infoBox ul > li {
+	margin-top: 10px;
+}
+.Plans .infoBox ul > li > img {
+	margin-right: 5px;
+}
+.Plans .infoBox ul > li div {
+	margin-left: 20px;
+}
+.Plans .infoBox .btn-container {
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.Plans .infoBox .btn {
+	background-color: #ffffff !important;
+	border-radius: 6px;
+	color: #946c20;
+	font-weight: bold;
+}
+
+@media (min-width: 769px) {
+	.Plans {
+		padding: 75px;
+	}
+}
+@media (max-width: 768px) {
+	.Plans h3 {
+		margin-top: 25px;
+	}
+}

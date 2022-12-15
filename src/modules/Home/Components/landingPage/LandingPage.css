@@ -1,0 +1,59 @@
+.landingPage {
+	background-color: #040404;
+	padding: 20px 0px 50px 0px;
+}
+
+.landingPage .imgContainer {
+	height: 500px;
+}
+
+.landingPage .landingImg {
+	margin-top: 70px;
+	width: 100%;
+	transition: all 0.4s ease-in;
+}
+
+.landingPage .landingImg:hover {
+	width: 90%;
+}
+.landingPage .textLanding {
+	max-width: 407px;
+	margin-top: 30%;
+}
+
+.landingPage .s1 {
+	color: #cda656;
+	font-family: "Kaushan Script", cursive;
+}
+.landingPage .s3 {
+	color: #ffffff;
+}
+
+.landingPage .btn {
+	padding: 7px 45px !important;
+	background-color: #cda656 !important;
+	transition: all 0.4s ease-in-out;
+	color: #040404 !important;
+	width: 50%;
+}
+.landingPage .btn:focus {
+box-shadow: none !important;
+}
+.landingPage .btn:hover {
+	background: #fff !important;
+}
+@media (max-width: 768px) {
+	.landingPage {
+		height: auto;
+		padding-top: 50px;
+	}
+	.landingPage .landingImg {
+		margin-top: 0px;
+		width: 100%;
+	}
+	.landingPage .textLanding {
+		max-width: 407px;
+		margin-top: 8%;
+		margin-bottom: 50px;
+	}
+}
