@@ -77,7 +77,7 @@ function Home() {
 					active={active}
 				/>
 			</div>
-			<div ref={about}>
+			{/* <div ref={about}>
 				<AboutUs active={active} />
 			</div>
 			<div ref={plans}>
@@ -91,7 +91,7 @@ function Home() {
 			</div>
 			<div ref={contact}>
 				<ContactUs active={active} />
-			</div>
+			</div> */}
 			<Footer getActive={(active) => setActive(active)} />
 		</div>
 	);

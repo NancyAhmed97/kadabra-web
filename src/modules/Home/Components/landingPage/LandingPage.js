@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import landingImg from "../../../../Assets/Group 1415.png";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import { GetDigitalServices } from "../../network";
 import "./LandingPage.css";
+import axios from "axios";
 function LandingPage({ active, getActive }) {
   const home = useRef(null);
   const [title, setTitle] = useState(null);
@@ -15,14 +15,13 @@ function LandingPage({ active, getActive }) {
   }
 
   useEffect(() => {
-    GetDigitalServices(
-      (success) => {
-        console.log(success.data.pageContent);
-        setTitle(success.data.title);
-        setContent(success.data.pageContent);
-      },
-      (fail) => {}
-    );
+    const baseUrl = "https://digital.kadabraservices.com/";
+    const GetDigitalServicesFu=async()=>{
+      const res = await axios.get(baseUrl+"Digital/GetAboutUs");
+      setTitle(res.data.data.title);
+      setContent(res.data.data.pageContent);
+    }
+    GetDigitalServicesFu()
   }, []);
   return (
     <div className="landingPage" ref={home}>
