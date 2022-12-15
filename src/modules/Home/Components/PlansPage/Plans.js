@@ -5,6 +5,7 @@ import { mediaBaseUrl } from "../../../../services";
 import TickBox from "../../../../Assets/Icons/tickBox";
 import Coins from "../../../../Assets/Icons/coins.svg";
 import "./Plans.css";
+import axios from "axios";
 function Plans({ active }) {
 	const [packages, setPackages] = useState([]);
 	const [hoverState, toggleHoverState] = useState(false);
@@ -16,12 +17,19 @@ function Plans({ active }) {
 	}
 
 	useEffect(() => {
-		GetPackages(
-			(success) => {
-				setPackages(success.data[2].packageModel);
-			},
-			(fail) => {}
-		);
+		const baseUrl = "https://digital.kadabraservices.com/";
+		const GetDigitalServicesFu=async()=>{
+		  const res = await axios.get(baseUrl+"Digital/GetKadabraDigitalHomeScreen");
+		  setPackages(res.data.data&&res.data.data[2].packageModel);
+		//   setPackages(res.data.data[2].packageModel);
+		}
+		GetDigitalServicesFu()
+		// GetPackages(
+		// 	(success) => {
+		// 		setPackages(success.data[2].packageModel);
+		// 	},
+		// 	(fail) => {}
+		// );
 	}, []);
 
 	return (
@@ -30,12 +38,12 @@ function Plans({ active }) {
 				<h3 className="mb-0 aboutUsHeading">Our Plans</h3>
 				<div className="borderLine"></div>
 				<Row>
-					{packages.map((plan) => {
+					{packages.map((plan,i) => {
 						return (
 							<Col
 								md={4}
 								sm={6}
-								key={plan.packageId}
+								key={i}
 								onMouseEnter={() => toggleHoverState(true)}
 								onMouseLeave={() => toggleHoverState(false)}
 							>

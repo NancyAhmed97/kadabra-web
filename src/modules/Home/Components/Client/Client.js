@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "./Client.css";
 import PrevIcon from "../../../../Assets/Icons/prevIcon";
 import NextIcon from "../../../../Assets/Icons/nextIcon";
+import axios from "axios";
 
 function Client({ active }) {
 	const [clientImg, getClientImg] = useState([]);
@@ -102,13 +103,17 @@ function Client({ active }) {
 		],
 	};
 	useEffect(() => {
-		GetDigitalServices(
-			(success) => {
-				getClientImg(success.data.kadabraClients);
-			},
-			(fail) => {}
-		);
+		const baseUrl = "https://digital.kadabraservices.com/";
+		const GetDigitalServicesFu=async()=>{
+		  const res = await axios.get(baseUrl+"Digital/GetDigitalServices");
+		  getClientImg(res.data.data);
+		  console.log(res.data.data);
+
+		}
+		GetDigitalServicesFu()
+	
 	}, []);
+	console.log(clientImg);
 	return (
 		<>
 			<div className="Client" ref={Client}>
@@ -122,11 +127,12 @@ function Client({ active }) {
 							accessibility={false}
 							ref={(c) => (slider = c)}
 						>
-							{clientImg.map((img) => {
+							{clientImg&&clientImg.map((img,i) => {
+								console.log(img);
 								return (
-									<div>
+									<div key={i}>
 										<div className="clientImg">
-											<img src={mediaBaseUrl + img} alt="clientImg" />
+											<img src={mediaBaseUrl + img.image} alt="clientImg" />
 										</div>
 									</div>
 								);

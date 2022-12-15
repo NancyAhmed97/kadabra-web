@@ -16,7 +16,7 @@ function Home() {
 	const services = useRef();
 	const client = useRef();
 	const contact = useRef();
-
+console.log(about);
 	const [thePosition, setPosition] = useState(window.pageYOffset);
 	useEffect(() => {
 		setTimeout(() => {
@@ -30,40 +30,39 @@ function Home() {
 		setPosition(winScroll);
 	};
 	useEffect(() => {
-		window.addEventListener("scroll", listenToScroll);
-
-		if (
-			thePosition >= home.current.offsetTop &&
-			thePosition <= home.current.offsetTop + home.current.offsetHeight
-		) {
-			localStorage.setItem("active", "home");
-		} else if (
-			thePosition >= about.current.offsetTop &&
-			thePosition <= about.current.offsetTop + about.current.offsetHeight
-		) {
-			localStorage.setItem("active", "about");
-		} else if (
-			thePosition >= plans.current.offsetTop &&
-			thePosition <= plans.current.offsetTop + plans.current.offsetHeight
-		) {
-			localStorage.setItem("active", "plans");
-		} else if (
-			thePosition >= services.current.offsetTop &&
-			thePosition <= services.current.offsetTop + services.current.offsetHeight
-		) {
-			localStorage.setItem("active", "services");
-		} else if (
-			thePosition >= client.current.offsetTop &&
-			thePosition <= client.current.offsetTop + client.current.offsetHeight
-		) {
-			localStorage.setItem("active", "client");
-		} else if (
-			thePosition >= contact.current.offsetTop &&
-			thePosition <= contact.current.offsetTop + contact.current.offsetHeight
-		) {
-			localStorage.setItem("active", "contact");
-		} else {
-		}
+		// window.addEventListener("scroll", listenToScroll);
+		// if (
+		// 	thePosition >= home.current.offsetTop &&
+		// 	thePosition <= home.current.offsetTop + home.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "home");
+		// } else if (
+		// 	thePosition >= about.current.offsetTop &&
+		// 	thePosition <= about.current.offsetTop + about.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "about");
+		// } else if (
+		// 	thePosition >= plans.current.offsetTop &&
+		// 	thePosition <= plans.current.offsetTop + plans.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "plans");
+		// } else if (
+		// 	thePosition >= services.current.offsetTop &&
+		// 	thePosition <= services.current.offsetTop + services.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "services");
+		// } else if (
+		// 	thePosition >= client.current.offsetTop &&
+		// 	thePosition <= client.current.offsetTop + client.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "client");
+		// } else if (
+		// 	thePosition >= contact.current.offsetTop &&
+		// 	thePosition <= contact.current.offsetTop + contact.current.offsetHeight
+		// ) {
+		// 	localStorage.setItem("active", "contact");
+		// } else {
+		// }
 	}, [thePosition]);
 
 	return (
@@ -77,21 +76,21 @@ function Home() {
 					active={active}
 				/>
 			</div>
-			{/* <div ref={about}>
+			<div ref={about}>
 				<AboutUs active={active} />
 			</div>
-			<div ref={plans}>
+		 <div ref={plans}>
 				<Plans active={active} />
 			</div>
-			<div ref={services}>
+				<div ref={services}>
 				<Services active={active} />
 			</div>
 			<div ref={client}>
 				<Client active={active} />
 			</div>
-			<div ref={contact}>
+		<div ref={contact}>
 				<ContactUs active={active} />
-			</div> */}
+			</div> 
 			<Footer getActive={(active) => setActive(active)} />
 		</div>
 	);

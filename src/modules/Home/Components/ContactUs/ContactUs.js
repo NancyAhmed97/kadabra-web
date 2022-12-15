@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { sendMessage } from "../../network";
@@ -25,34 +26,48 @@ function ContactUs({ active }) {
 		setMessage("");
 		setEmail("");
 	};
-	const sendData = (e) => {
+	const sendData = async(e) => {
 		e.preventDefault();
+		const baseUrl = "https://digital.kadabraservices.com/";
 		let body = {
 			Name: firstName + " " + lastName,
 			Email: email,
 			Message: message,
 		};
-		sendMessage(
-			body,
-			(success) => {
-				if (success.success === true) {
-					setResponse({
-						status: 200,
-						message: "Message was sent Successfully.",
-					});
-
-					resetFields();
-				}
-			},
-			(fail) => {
-				if (fail.response.data) {
-					setResponse({
+try {
+	const res = await axios.get(baseUrl+"Digital/GetDigitalServices",body);
+	setResponse({
+			status: 200,
+			message: "Message was sent Successfully.",
+		});		console.log(res.data.data);
+} catch (error) {
+				setResponse({
 						status: 400,
 						message: "Something went wrong!",
-					});
-				}
-			}
-		);
+					});	
+}
+
+		// sendMessage(
+		// 	body,
+		// 	(success) => {
+		// 		if (success.success === true) {
+		// 			setResponse({
+		// 				status: 200,
+		// 				message: "Message was sent Successfully.",
+		// 			});
+
+		// 			resetFields();
+		// 		}
+		// 	},
+		// 	(fail) => {
+		// 		if (fail.response.data) {
+		// 			setResponse({
+		// 				status: 400,
+		// 				message: "Something went wrong!",
+		// 			});
+		// 		}
+		// 	}
+		// );
 		if (firstName === "" || lastName === "" || email === "" || message === "") {
 			setErrAlert(true);
 		}

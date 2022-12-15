@@ -1,6 +1,6 @@
+import axios from "axios";
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { GetDigitalServices } from "../../network";
 import Group from "../../../../Assets/Group 1413.png";
 import { mediaBaseUrl } from "../../../../services";
 import "./AboutUs.css";
@@ -15,13 +15,14 @@ function AboutUs({ active }) {
 		executeScroll(about);
 	}
 	useEffect(() => {
-		GetDigitalServices(
-			(success) => {
-				setDescription(success.data.description.split("."));
-				setModal(success.data.missionVisionModel);
-			},
-			(fail) => {}
-		);
+		const baseUrl = "https://digital.kadabraservices.com/";
+		const GetDigitalServicesFu=async()=>{
+		  const res = await axios.get(baseUrl+"Digital/GetAboutUs");
+		  setDescription(res.data.data.description.split("."));
+		  setModal(res.data.data.missionVisionModel);
+		}
+		GetDigitalServicesFu()
+
 	}, []);
 
 	// useEffect(() => {
